@@ -159,6 +159,13 @@
             bindings = <&kp LANGUAGE_2 &to 0>;
             label = "MACRO_MAC_EISUU";
         };
+
+        macro_U: macro_U {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp U>;
+            label = "MACRO_U";
+        };
     };
 
     keymap {
