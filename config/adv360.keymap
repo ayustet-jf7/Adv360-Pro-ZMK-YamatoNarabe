@@ -35,7 +35,7 @@
             #binding-cells = <0>;
             bindings = <&kp L &kp T &kp U>;
             label = "MACRO_LTU";
-            wait-ms = <1>;
+            wait-ms = <0>;
         };
 
         macro_nn: macro_nn {
@@ -71,7 +71,7 @@
             #binding-cells = <0>;
             bindings = <&kp Y &kp A>;
             label = "MACRO_YA";
-            wait-ms = <1>;
+            wait-ms = <0>;
         };
 
         macro_YU: macro_YU {
@@ -79,7 +79,7 @@
             #binding-cells = <0>;
             bindings = <&kp Y &kp U>;
             label = "MACRO_YU";
-            wait-ms = <1>;
+            wait-ms = <0>;
         };
 
         macro_YO: macro_YO {
@@ -87,7 +87,7 @@
             #binding-cells = <0>;
             bindings = <&kp Y &kp O>;
             label = "MACRO_YO";
-            wait-ms = <1>;
+            wait-ms = <0>;
         };
 
         macro_LA: macro_LA {
