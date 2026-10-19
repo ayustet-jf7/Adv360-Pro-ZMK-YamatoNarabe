@@ -163,11 +163,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESC           &kp N1            &kp N2     &kp N3      &kp N4     &kp N5  &tog 1                                                                      &mo 3            &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &kp MINUS
-&kp TAB           &kp SINGLE_QUOTE  &kp COMMA  &kp PERIOD  &kp P      &kp Y   &none                                                                       &macro_Mac_KANA  &kp F   &kp G   &kp C     &kp R     &kp L     &kp SLASH
-&kp LEFT_CONTROL  &kp A             &kp O      &kp E       &kp U      &kp I   &kp F17  &kp EQUAL  &kp LALT           &kp LGUI       &kp NON_US_BACKSLASH  &macro_ime_on    &kp D   &kp H   &kp T     &kp N     &kp S     &kp RIGHT_CONTROL
-&kp LSHFT         &kp SEMICOLON     &kp Q      &kp J       &kp K      &kp X                       &kp DELETE         &kp DELETE                                            &kp B   &kp M   &kp W     &kp V     &kp Z     &kp RSHFT
-&mo 2             &kp GRAVE         &kp CAPS   &kp LEFT    &kp RIGHT          &mo 1    &kp SPACE  &kp BACKSPACE      &kp BACKSPACE  &kp ENTER             &mo 1                    &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &mo 2
+&kp ESC           &kp N1            &kp N2     &kp N3      &kp N4     &kp N5  &tog 1                                                                             &mo 3            &kp N6  &kp N7  &kp N8    &kp N9    &kp N0    &kp MINUS
+&kp TAB           &kp SINGLE_QUOTE  &kp COMMA  &kp PERIOD  &kp P      &kp Y   &kp LANGUAGE_2                                                                     &macro_Mac_KANA  &kp F   &kp G   &kp C     &kp R     &kp L     &kp SLASH
+&kp LEFT_CONTROL  &kp A             &kp O      &kp E       &kp U      &kp I   &kp F17         &kp EQUAL  &kp LALT           &kp LGUI       &kp NON_US_BACKSLASH  &macro_ime_on    &kp D   &kp H   &kp T     &kp N     &kp S     &kp RIGHT_CONTROL
+&kp LSHFT         &kp SEMICOLON     &kp Q      &kp J       &kp K      &kp X                              &kp DELETE         &kp DELETE                                            &kp B   &kp M   &kp W     &kp V     &kp Z     &kp RSHFT
+&mo 2             &kp GRAVE         &kp CAPS   &kp LEFT    &kp RIGHT          &mo 1           &kp SPACE  &kp BACKSPACE      &kp BACKSPACE  &kp ENTER             &mo 1                    &kp UP  &kp DOWN  &kp LBKT  &kp RBKT  &mo 2
             >;
         };
 
@@ -207,11 +207,11 @@
         Japanese {
             display-name = "Red";
             bindings = <
-&kp ESC           &kp N1               &kp N2               &kp N3    &kp N4     &kp N5      &tog 1                                                                               &mo 3    &kp N6         &kp N7      &kp N8     &kp N9     &kp N0     &kp MINUS
-&kp TAB           &kp P                &kp R                &kp N     &kp M      &kp COMMA   &macro_Mac_EISUU                                                                     &none    &kp SLASH      &macro_ltu  &kp I      &kp E      &kp L      &kp APOS
-&kp LEFT_CONTROL  &kp H                &kp T                &kp S     &kp K      &kp W       &macro_ime_off    &kp EQUAL  &kp LALT           &kp LGUI       &kp NON_US_BACKSLASH  &kp F18  &macro_nn      &kp A       &kp U      &kp O      &kp MINUS  &kp RIGHT_CONTROL
-&sl 5             &kp B                &kp D                &kp Z     &kp G      &kp PERIOD                               &kp DELETE         &kp DELETE                                    &kp LS(SLASH)  &macro_YA   &macro_YU  &macro_YO  &kp Y      &sl 5
-&mo 7             &kp INTERNATIONAL_2  &kp INTERNATIONAL_1  &kp LEFT  &kp RIGHT              &mo 6             &kp SPACE  &kp BACKSPACE      &kp BACKSPACE  &kp ENTER             &mo 6                   &kp UP      &kp DOWN   &kp LBKT   &kp RBKT   &mo 7
+&kp ESC           &kp N1               &kp N2               &kp N3    &kp N4     &kp N5      &tog 1                                                                               &mo 3           &kp N6         &kp N7      &kp N8     &kp N9     &kp N0     &kp MINUS
+&kp TAB           &kp P                &kp R                &kp N     &kp M      &kp COMMA   &macro_Mac_EISUU                                                                     &kp LANGUAGE_1  &kp SLASH      &macro_ltu  &kp I      &kp E      &kp L      &kp APOS
+&kp LEFT_CONTROL  &kp H                &kp T                &kp S     &kp K      &kp W       &macro_ime_off    &kp EQUAL  &kp LALT           &kp LGUI       &kp NON_US_BACKSLASH  &kp F18         &macro_nn      &kp A       &kp U      &kp O      &kp MINUS  &kp RIGHT_CONTROL
+&sl 5             &kp B                &kp D                &kp Z     &kp G      &kp PERIOD                               &kp DELETE         &kp DELETE                                           &kp LS(SLASH)  &macro_YA   &macro_YU  &macro_YO  &kp Y      &sl 5
+&mo 7             &kp INTERNATIONAL_2  &kp INTERNATIONAL_1  &kp LEFT  &kp RIGHT              &mo 6             &kp SPACE  &kp BACKSPACE      &kp BACKSPACE  &kp ENTER             &mo 6                          &kp UP      &kp DOWN   &kp LBKT   &kp RBKT   &mo 7
             >;
         };
 
