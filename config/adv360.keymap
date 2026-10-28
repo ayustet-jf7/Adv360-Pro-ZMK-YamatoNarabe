@@ -167,11 +167,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESC           &kp N1                &kp N2     &kp N3      &kp N4     &kp N5  &tog 4                                                                                     &mo 6            &kp N6  &kp N7  &kp N8    &kp N9             &kp N0         &kp MINUS
-&kp TAB           &kp RS(N7)            &kp COMMA  &kp PERIOD  &kp P      &kp Y   &kp INTERNATIONAL_5                                                                        &macro_ime_on    &kp F   &kp G   &kp C     &kp R              &kp L          &kp SLASH
-&kp LEFT_CONTROL  &kp A                 &kp O      &kp E       &kp U      &kp I   &kp LANGUAGE_2       &kp LS(MINUS)  &kp LALT           &kp LGUI       &kp INTERNATIONAL_1  &macro_Mac_KANA  &kp D   &kp H   &kp T     &kp N              &kp S          &kp RIGHT_CONTROL
-&sl 1             &kp SEMICOLON         &kp Q      &kp J       &kp K      &kp X                                       &kp DELETE         &kp DELETE                                           &kp B   &kp M   &kp W     &kp V              &kp Z          &sl 1
-&mo 5             &kp LS(LEFT_BRACKET)  &kp CAPS   &kp LEFT    &kp RIGHT          &mo 4                &kp SPACE      &kp BACKSPACE      &kp BACKSPACE  &kp ENTER            &mo 4                    &kp UP  &kp DOWN  &kp RIGHT_BRACKET  &kp BACKSLASH  &mo 5
+&kp ESC           &kp N1                &kp N2        &kp N3      &kp N4     &kp N5  &tog 4                                                                                     &mo 6            &kp N6  &kp N7  &kp N8    &kp N9             &kp N0         &kp MINUS
+&kp TAB           &kp RS(N7)            &kp COMMA     &kp PERIOD  &kp P      &kp Y   &kp INTERNATIONAL_5                                                                        &macro_ime_on    &kp F   &kp G   &kp C     &kp R              &kp L          &kp SLASH
+&kp LEFT_CONTROL  &kp A                 &kp O         &kp E       &kp U      &kp I   &kp LANGUAGE_2       &kp LS(MINUS)  &kp LALT           &kp LGUI       &kp INTERNATIONAL_1  &macro_Mac_KANA  &kp D   &kp H   &kp T     &kp N              &kp S          &kp RIGHT_CONTROL
+&sl 1             &kp SEMICOLON         &kp Q         &kp J       &kp K      &kp X                                       &kp DELETE         &kp DELETE                                           &kp B   &kp M   &kp W     &kp V              &kp Z          &sl 1
+&mo 5             &kp LS(LEFT_BRACKET)  &kp RS(CAPS)  &kp LEFT    &kp RIGHT          &mo 4                &kp SPACE      &kp BACKSPACE      &kp BACKSPACE  &kp ENTER            &mo 4                    &kp UP  &kp DOWN  &kp RIGHT_BRACKET  &kp BACKSLASH  &mo 5
             >;
         };
 
@@ -182,7 +182,7 @@
 &kp TAB           &kp RS(N2)        &kp RS(COMMA)     &kp RS(PERIOD)  &kp RS(P)   &kp RS(Y)   &kp LANGUAGE_2                                                                                &macro_Mac_KANA  &kp LS(F)  &kp LS(G)         &kp LS(C)             &kp LS(R)              &kp LS(L)          &kp LS(SLASH)
 &kp LEFT_CONTROL  &kp RS(A)         &kp RS(O)         &kp RS(E)       &kp RS(U)   &kp RS(I)   &kp F17         &kp LS(SEMICOLON)  &kp LALT           &kp LGUI       &kp LS(INTERNATIONAL_3)  &macro_ime_on    &kp LS(D)  &kp LS(H)         &kp LS(T)             &kp LS(N)              &kp LS(S)          &kp RIGHT_CONTROL
 &kp LSHFT         &kp SINGLE_QUOTE  &kp RS(Q)         &kp RS(J)       &kp RS(K)   &kp RS(X)                                      &kp DELETE         &kp DELETE                                               &kp LS(B)  &kp LS(M)         &kp LS(W)             &kp LS(V)              &kp LS(Z)          &kp RSHFT
-&mo 5             &kp LS(EQUAL)     &kp CAPS          &kp LEFT        &kp RIGHT               &mo 4           &kp SPACE          &kp BACKSPACE      &kp BACKSPACE  &kp ENTER                &mo 4                       &kp UP            &kp DOWN              &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &mo 5
+&mo 5             &kp LS(EQUAL)     &kp RS(CAPS)      &kp LEFT        &kp RIGHT               &mo 4           &kp SPACE          &kp BACKSPACE      &kp BACKSPACE  &kp ENTER                &mo 4                       &kp UP            &kp DOWN              &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &mo 5
             >;
         };
 
@@ -211,11 +211,11 @@
         KEYPAD {
             display-name = "Kp";
             bindings = <
-&kp ESCAPE        &none      &none           &none              &none            &none          &trans                                                     &mo 0   &kp LS(EQUAL)      &kp RIGHT_BRACKET  &kp BACKSLASH    &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &none
-&kp TAB           &none      &kp PAGE_UP     &kp UP             &kp PAGE_DOWN    &none          &none                                                      &none   &none              &kp PAGE_UP        &kp UP_ARROW     &kp PAGE_DOWN          &none              &none
-&kp LEFT_CONTROL  &kp HOME   &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp END        &none   &none    &kp LALT           &kp LGUI    &none      &none   &kp HOME           &kp LEFT_ARROW     &kp DOWN_ARROW   &kp RIGHT_ARROW        &kp END            &kp RIGHT_CONTROL
-&kp LSHFT         &kp LC(Z)  &kp LC(X)       &kp LC(C)          &kp LC(V)        &kp LA(SPACE)                   &none              &none                          &kp K_APPLICATION  &kp LC(KP_PLUS)    &kp F17          &kp F18                &none              &kp RSHFT
-&mo 0             &none      &none           &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                 &trans  &kp DEL  &kp BACKSPACE      &kp DELETE  &kp ENTER  &trans                     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F22                &kp F23            &mo 0
+&kp ESCAPE        &kp SLASH  &kp MINUS       &kp LS(MINUS)      &kp LS(SEMICOLON)  &kp LS(APOSTROPHE)  &trans                                                     &mo 0   &kp LS(EQUAL)      &kp RIGHT_BRACKET  &kp BACKSLASH    &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &none
+&kp TAB           &none      &kp PAGE_UP     &kp UP             &kp PAGE_DOWN      &none               &none                                                      &none   &none              &kp PAGE_UP        &kp UP_ARROW     &kp PAGE_DOWN          &none              &none
+&kp LEFT_CONTROL  &kp HOME   &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW    &kp END             &none   &none    &kp LALT           &kp LGUI    &none      &none   &kp HOME           &kp LEFT_ARROW     &kp DOWN_ARROW   &kp RIGHT_ARROW        &kp END            &kp RIGHT_CONTROL
+&kp LSHFT         &kp LC(Z)  &kp LC(X)       &kp LC(C)          &kp LC(V)          &kp LA(SPACE)                        &none              &none                          &kp K_APPLICATION  &kp LC(KP_PLUS)    &kp F17          &kp F18                &none              &kp RSHFT
+&mo 0             &none      &none           &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                        &trans  &kp DEL  &kp BACKSPACE      &kp DELETE  &kp ENTER  &trans                     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp F22                &kp F23            &mo 0
             >;
         };
 
