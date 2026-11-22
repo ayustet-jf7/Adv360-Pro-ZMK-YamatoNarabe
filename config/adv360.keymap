@@ -27,6 +27,110 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        ja_n6: ja_number_6 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_6>, <&kp EQUAL>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ja_n7: ja_number_7 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N7>, <&kp NUMBER_6>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ja_n8: ja_number_8 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N8>, <&kp SINGLE_QUOTE>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ja_n9: ja_number_9 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N9>, <&kp N8>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ja_n0: ja_number_0 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp N9>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ja_minus: ja_minus {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp INTERNATIONAL_1>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ja_equal: ja_equal {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(MINUS)>, <&kp SEMICOLON>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ja_left_bracket: ja_left_bracket {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_BRACKET>, <&kp RIGHT_BRACKET>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ja_right_bracket: ja_right_bracket {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSLASH>, <&kp BACKSLASH>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ja_semi_colon: ja_semi_colon {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SEMICOLON>, <&kp SINGLE_QUOTE>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ja_quote: ja_quote {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N7)>, <&kp LS(NUMBER_2)>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ja_back_quote: ja_back_quote {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_BRACKET)>, <&kp LS(EQUAL)>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -174,11 +278,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp ESC           &kp N1                &ja_n2        &kp N3      &kp N4     &kp N5  &tog 4                                                                                     &mo 6            &kp N6  &kp N7  &kp N8    &kp N9             &kp N0         &kp MINUS
-&kp TAB           &kp RS(N7)            &kp COMMA     &kp PERIOD  &kp P      &kp Y   &kp INTERNATIONAL_5                                                                        &macro_ime_on    &kp F   &kp G   &kp C     &kp R              &kp L          &kp SLASH
-&kp LEFT_CONTROL  &kp A                 &kp O         &kp E       &kp U      &kp I   &kp LANGUAGE_2       &kp LS(MINUS)  &kp LALT           &kp LGUI       &kp INTERNATIONAL_1  &macro_Mac_KANA  &kp D   &kp H   &kp T     &kp N              &kp S          &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &kp SEMICOLON         &kp Q         &kp J       &kp K      &kp X                                       &kp DELETE         &kp DELETE                                           &kp B   &kp M   &kp W     &kp V              &kp Z          &kp RIGHT_SHIFT
-&mo 5             &kp LS(LEFT_BRACKET)  &kp RS(CAPS)  &kp LEFT    &kp RIGHT          &mo 4                &kp SPACE      &kp BACKSPACE      &kp BACKSPACE  &kp ENTER            &mo 4                    &kp UP  &kp DOWN  &kp RIGHT_BRACKET  &kp BACKSLASH  &mo 5
+&kp ESC           &kp N1          &ja_n2        &kp N3      &kp N4     &kp N5  &tog 4                                                                                 &mo 6            &ja_n6  &ja_n7  &ja_n8    &ja_n9            &ja_n0             &ja_minus
+&kp TAB           &ja_quote       &kp COMMA     &kp PERIOD  &kp P      &kp Y   &kp INTERNATIONAL_5                                                                    &macro_ime_on    &kp F   &kp G   &kp C     &kp R             &kp L              &kp SLASH
+&kp LEFT_CONTROL  &kp A           &kp O         &kp E       &kp U      &kp I   &kp LANGUAGE_2       &ja_equal  &kp LALT           &kp LGUI       &kp INTERNATIONAL_1  &macro_Mac_KANA  &kp D   &kp H   &kp T     &kp N             &kp S              &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &ja_semi_colon  &kp Q         &kp J       &kp K      &kp X                                   &kp DELETE         &kp DELETE                                           &kp B   &kp M   &kp W     &kp V             &kp Z              &kp RIGHT_SHIFT
+&mo 5             &ja_back_quote  &kp RS(CAPS)  &kp LEFT    &kp RIGHT          &mo 4                &kp SPACE  &kp BACKSPACE      &kp BACKSPACE  &kp ENTER            &mo 4                    &kp UP  &kp DOWN  &ja_left_bracket  &ja_right_bracket  &mo 5
             >;
         };
 
